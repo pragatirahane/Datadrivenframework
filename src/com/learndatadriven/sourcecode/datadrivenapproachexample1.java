@@ -7,13 +7,14 @@ import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class datadrivenapproachexample1 {
 
 	public static void main(String[] args) {
 		try {
-			ChromeDriver driver = new ChromeDriver();
+			FirefoxDriver driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			FileInputStream fis = new FileInputStream("D:\\ExcelR\\Selenium class\\DataDrivenFramework\\src\\com\\datadriven\\utils\\data.properties");
